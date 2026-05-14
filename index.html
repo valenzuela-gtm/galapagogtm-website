@@ -4408,9 +4408,9 @@ window.__updateNextOpening = function() {
   var lang = (window.__currentLang === 'es') ? 'es' : 'en';
   var months = (lang === 'es') ? monthsES : monthsEN;
   var now = new Date();
-  // Bi-weekly roll: days 1–14 → this month; days 15–end → next month
+  // Bi-weekly roll: days 1–9 → this month; days 10–end → next month
   var monthIdx = now.getMonth();
-  if (now.getDate() >= 15) monthIdx = (monthIdx + 1) % 12;
+  if (now.getDate() >= 10) monthIdx = (monthIdx + 1) % 12;
   el.textContent = months[monthIdx];
 };
 window.__updateNextOpening();
