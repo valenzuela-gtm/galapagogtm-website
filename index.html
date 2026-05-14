@@ -7,6 +7,10 @@
 <meta name="description" content="A fixed-scope GTM engagement for B2B founders who need their revenue system built, fixed, or scaled. By Bernardo Valenzuela.">
 <meta name="theme-color" content="#131313">
 
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -4408,9 +4412,9 @@ window.__updateNextOpening = function() {
   var lang = (window.__currentLang === 'es') ? 'es' : 'en';
   var months = (lang === 'es') ? monthsES : monthsEN;
   var now = new Date();
-  // Bi-weekly roll: days 1–14 → this month; days 15–end → next month
+  // Bi-weekly roll: days 1–9 → this month; days 10–end → next month
   var monthIdx = now.getMonth();
-  if (now.getDate() >= 15) monthIdx = (monthIdx + 1) % 12;
+  if (now.getDate() >= 10) monthIdx = (monthIdx + 1) % 12;
   el.textContent = months[monthIdx];
 };
 window.__updateNextOpening();
