@@ -375,21 +375,19 @@
     background: var(--paper);
     border-color: var(--paper);
   }
-  /* Hero primary CTA — neon outline (lime on ink), solid lime on hover */
+  /* Hero primary CTA — lime fill + black text (matches WhatsApp button), inverts on hover */
   .hero .btn-primary {
-    background: var(--ink);
-    border-color: var(--lime);
-    color: var(--lime);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    box-shadow: 0 0 22px rgba(191, 247, 61, 0.40);
-  }
-  .hero .btn-primary:hover {
     background: var(--lime);
     border-color: var(--lime);
     color: var(--ink);
-    box-shadow: 0 0 32px rgba(191, 247, 61, 0.60);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+  .hero .btn-primary:hover {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--lime);
   }
   .btn-ghost {
     background: transparent;
