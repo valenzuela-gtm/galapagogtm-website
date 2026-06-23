@@ -375,6 +375,22 @@
     background: var(--paper);
     border-color: var(--paper);
   }
+  /* Hero primary CTA — neon outline (lime on ink), solid lime on hover */
+  .hero .btn-primary {
+    background: var(--ink);
+    border-color: var(--lime);
+    color: var(--lime);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    box-shadow: 0 0 22px rgba(191, 247, 61, 0.40);
+  }
+  .hero .btn-primary:hover {
+    background: var(--lime);
+    border-color: var(--lime);
+    color: var(--ink);
+    box-shadow: 0 0 32px rgba(191, 247, 61, 0.60);
+  }
   .btn-ghost {
     background: transparent;
     border-color: var(--ink);
@@ -2524,10 +2540,9 @@
     color: var(--lime);
   }
   .hero {
-    min-height: 92vh;
-    min-height: 92svh;
-    padding-top: clamp(104px, 12vh, 138px);
-    padding-bottom: clamp(20px, 4vh, 42px);
+    min-height: auto;
+    padding-top: clamp(104px, 12vh, 132px);
+    padding-bottom: clamp(56px, 7vh, 84px);
     justify-content: center;
   }
   .hero-grid {
@@ -2541,7 +2556,7 @@
     margin-bottom: 22px;
   }
   .hero-headline {
-    margin-bottom: clamp(24px, 4vh, 36px);
+    margin-bottom: clamp(32px, 5vh, 48px);
     gap: clamp(8px, 1.5vh, 14px);
   }
   .hero-line-1,
@@ -2581,7 +2596,7 @@
   }
   .hero-sub {
     max-width: 760px;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
   }
   .hero-contrast {
     font-size: clamp(18px, 1.55vw, 24px);
@@ -3280,7 +3295,7 @@
     <p class="hero-sub fade-in" data-i18n="hero.sub">Fixed-scope GTM Sprint for B2B founders who want to fix what's blocking revenue growth — not advice, not an endless retainer.</p>
 
     <div class="hero-ctas fade-in">
-      <a href="#diagnostic" class="btn btn-primary"><span data-i18n="hero.cta.primary">Start with a free diagnostic</span> <span class="arr">→</span></a>
+      <a href="#diagnostic" class="btn btn-primary"><span data-i18n="hero.cta.primary">Get a free diagnostic</span> <span class="arr">→</span></a>
       <a href="https://wa.me/13128606629?text=Hi%20Bernardo%20%E2%80%94%20I%20already%20know%20what%27s%20broken." id="heroGhostCta" class="link-ghost hero-secondary" target="_blank" rel="noopener noreferrer" data-i18n-html="hero.cta.ghost">Already know what's broken? <span class="hero-secondary-strong">Tell me →</span></a>
     </div>
   </div>
@@ -4459,7 +4474,7 @@ window.__updateNextOpening();
       'hero.status.max': 'MAX 3 ENGAGEMENTS',
       'hero.eyebrow': 'BERNARDO VALENZUELA\u00a0\u00a0/\u00a0\u00a0GTM OPERATOR\u00a0\u00a0/\u00a0\u00a0MEXICO × U.S.',
       'hero.sub': 'Fixed-scope GTM Sprint for B2B founders who want to fix what\'s blocking revenue growth — not advice, not an endless retainer.',
-      'hero.cta.primary': 'Start with a free diagnostic',
+      'hero.cta.primary': 'Get a free diagnostic',
       'hero.cta.ghost': 'Already know what\'s broken? <span class="hero-secondary-strong">Tell me →</span>',
       'hero.cta.ghost.url': 'https://wa.me/13128606629?text=Hi%20Bernardo%20%E2%80%94%20I%20already%20know%20what%27s%20broken.',
       // SECTION 01
@@ -4678,7 +4693,7 @@ window.__updateNextOpening();
       'hero.status.max': 'MÁX 3 SPRINTS A LA VEZ',
       'hero.eyebrow': 'BERNARDO VALENZUELA\u00a0\u00a0/\u00a0\u00a0GTM OPERATOR\u00a0\u00a0/\u00a0\u00a0MÉXICO × EE.UU.',
       'hero.sub': 'GTM Sprint de alcance fijo para founders B2B que quieren arreglar lo que está atorado en su revenue — no es una asesoría, ni un retainer eterno.',
-      'hero.cta.primary': 'Empieza con diagnóstico gratis',
+      'hero.cta.primary': 'Pide tu diagnóstico gratis',
       'hero.cta.ghost': '¿Ya sabes qué está fallando? <span class="hero-secondary-strong">Platiquemos →</span>',
       'hero.cta.ghost.url': 'https://wa.me/13128606629?text=Hola%20Bernardo%20%E2%80%94%20Ya%20s%C3%A9%20qu%C3%A9%20est%C3%A1%20roto.',
       // SECTION 01
