@@ -1477,7 +1477,7 @@
 
   .why-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     margin-bottom: 56px;
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -1487,7 +1487,7 @@
   .why-stat .num {
     font-family: var(--serif);
     font-weight: 600;
-    font-size: clamp(48px, 6vw, 84px);
+    font-size: clamp(34px, 4.2vw, 58px);
     line-height: 0.95;
     letter-spacing: -0.02em;
     color: var(--lime);
@@ -2448,7 +2448,7 @@
     .compare-row.headrow .compare-cell.empty { display: none; }
     .compare-row.headrow .compare-col-galapago.head { padding: 22px 24px; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-    .why-stats { grid-template-columns: 1fr; gap: 4px; padding: 28px 0; }
+    .why-stats { grid-template-columns: repeat(2, 1fr); gap: 4px 20px; padding: 28px 0; }
     .why-stat { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
     .why-stat:last-child { border-bottom: none; }
     .form-grid { grid-template-columns: 1fr; }
@@ -2835,7 +2835,7 @@
   }
   .why-stat .num {
     font-family: var(--mono);
-    font-size: clamp(32px, 4vw, 58px);
+    font-size: clamp(24px, 2.9vw, 42px);
     letter-spacing: -0.04em;
   }
   .receipts-section {
@@ -3563,11 +3563,15 @@
           </div>
           <div class="why-stat">
             <div class="num"><span class="counter" data-target="6" data-prefix="$" data-suffix="M">$0M</span></div>
-            <div class="label" data-i18n="s05.stat2.l">ARR · region built end-to-end for one client.</div>
+            <div class="label" data-i18n="s05.stat2.l">ARR · Spanish-speaking LATAM, built from zero</div>
           </div>
           <div class="why-stat">
             <div class="num"><span class="counter" data-target="10" data-prefix="$" data-suffix="M">$0M</span></div>
-            <div class="label" data-i18n="s05.stat3.l">ARR across a few clients · Mexico market</div>
+            <div class="label" data-i18n="s05.stat3.l">ARR generated for clients · Mexico</div>
+          </div>
+          <div class="why-stat">
+            <div class="num"><span class="counter" data-target="1.1" data-decimals="1" data-prefix="$" data-suffix="M">$0M</span></div>
+            <div class="label" data-i18n="s05.stat4.l">ARR in 6 months, from zero · latest build</div>
           </div>
         </div>
 
@@ -4455,8 +4459,9 @@ window.__updateNextOpening();
       's05.v3.seat': 'Scaled a region. <em>Built the team.</em>',
       's05.v3.det': 'Region built to<br>$6M ARR.',
       's05.stat1.l': 'Enterprise book at Salesforce, U.S.',
-      's05.stat2.l': 'ARR · region built end-to-end for one client.',
-      's05.stat3.l': 'ARR across a few clients · Mexico market',
+      's05.stat2.l': 'ARR · Spanish-speaking LATAM, built from zero',
+      's05.stat3.l': 'ARR generated for clients · Mexico',
+      's05.stat4.l': 'ARR in 6 months, from zero · latest build',
       's05.bio.1': 'I have 15 years building, running, and fixing go-to-market motions across B2B SaaS and tech-enabled services in the U.S. and Latin America.',
       's05.bio.2': 'I focus on one thing: making things happen to generate revenue — not slides, not theory.',
       's05.bio.3': 'I\'ve worked from multiple seats: founder, sales leader, and enterprise IC — so I know what breaks in real-world GTM and how to fix it.',
@@ -4672,8 +4677,9 @@ window.__updateNextOpening();
       's05.v3.seat': 'Escalé una región. <em>Construí el equipo.</em>',
       's05.v3.det': 'Región construida a<br>$6M ARR.',
       's05.stat1.l': 'Book enterprise en Salesforce, EE.UU.',
-      's05.stat2.l': 'ARR · región construida de punta a punta para un cliente.',
-      's05.stat3.l': 'ARR entre varios clientes · mercado de México',
+      's05.stat2.l': 'ARR · LATAM hispanohablante, desde cero',
+      's05.stat3.l': 'ARR generado para clientes · México',
+      's05.stat4.l': 'ARR en 6 meses, desde cero · el más reciente',
       's05.bio.1': 'Tengo 15 años construyendo, operando y corrigiendo sistemas GTM para B2B SaaS y tech-enabled services entre Estados Unidos y Latinoamérica.',
       's05.bio.2': 'Me enfoco en una sola cosa: hacer que las cosas pasen para generar revenue — no slides, no teoría.',
       's05.bio.3': 'He estado en los tres lados de la mesa: founder, sales leader y enterprise IC — así que sé qué se rompe en un GTM real y cómo corregirlo.',
