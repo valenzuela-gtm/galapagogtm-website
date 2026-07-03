@@ -43,7 +43,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 
 <style>
   :root {
@@ -1652,11 +1651,6 @@
     margin-bottom: 16px;
     font-weight: 500;
   }
-  #growthChart {
-    width: 100%;
-    height: 140px;
-  }
-
   /* ============= RECEIPTS GRID (2x2) ============= */
   .receipts-grid {
     display: grid;
@@ -1758,6 +1752,7 @@
   }
   .receipt-card-quote blockquote {
     font-family: var(--serif);
+    font-style: italic;
     font-size: 14.5px;
     line-height: 1.55;
     color: var(--stone-200);
@@ -2528,6 +2523,10 @@
   .footer-bv-quote {
     font-family: var(--sans);
     font-weight: 500;
+  }
+  /* Testimonials read as quotes — italic (2026-07-02 copy pass) */
+  .receipt-card-quote blockquote {
+    font-style: italic;
   }
   .youget-body em,
   .bfs-content h3 em,
@@ -3544,7 +3543,7 @@
         <h2 class="h-section" data-i18n="s05.sub">Been There. Done That.</h2>
 
         <!-- Three-vantage-point mini diagram: founder · seller · leader -->
-        <div class="vantage" aria-label="Three vantage points Bernardo has worked from">
+        <div class="vantage" aria-label="Three vantage points I have worked from">
           <div class="vantage-row">
             <div class="vantage-num" data-i18n="s05.v1.num">01 / FOUNDER</div>
             <div class="vantage-seat" data-i18n-html="s05.v1.seat">Built GTM from zero. <em>No inherited playbook.</em></div>
@@ -3565,20 +3564,20 @@
             <div class="label" data-i18n="s05.stat1.l">Enterprise book at Salesforce, U.S.</div>
           </div>
           <div class="why-stat">
-            <div class="num"><span class="counter" data-target="6.5" data-prefix="$" data-suffix="M" data-decimals="1">$0M</span></div>
-            <div class="label" data-i18n="s05.stat2.l">ARR for clients in LATAM expansion.</div>
+            <div class="num"><span class="counter" data-target="6" data-prefix="$" data-suffix="M">$0M</span></div>
+            <div class="label" data-i18n="s05.stat2.l">ARR · region built end-to-end for one client.</div>
           </div>
           <div class="why-stat">
             <div class="num"><span class="counter" data-target="10" data-prefix="$" data-suffix="M">$0M</span></div>
-            <div class="label" data-i18n="s05.stat3.l">Scaled a new region past this in two years</div>
+            <div class="label" data-i18n="s05.stat3.l">ARR across a few clients · Mexico market</div>
           </div>
         </div>
 
         <div class="why-body">
-          <p data-i18n="s05.bio.1">Bernardo has more than 12 years building, running, and fixing go-to-market motions across B2B SaaS and tech-enabled services in the U.S. and Latin America.</p>
-          <p data-i18n="s05.bio.2">He focuses on one thing: making things happen to generate revenue — not slides, not theory.</p>
-          <p data-i18n="s05.bio.3">He's worked from multiple seats: founder, sales leader, and enterprise IC — so he knows what breaks in real-world GTM and how to fix it.</p>
-          <p data-i18n="s05.bio.4">Bernardo doesn't believe in hacks or guarantees. He believes revenue compounds when you build a clear motion, execute it weekly, and adjust based on reality.</p>
+          <p data-i18n="s05.bio.1">I have more than 12 years building, running, and fixing go-to-market motions across B2B SaaS and tech-enabled services in the U.S. and Latin America.</p>
+          <p data-i18n="s05.bio.2">I focus on one thing: making things happen to generate revenue — not slides, not theory.</p>
+          <p data-i18n="s05.bio.3">I've worked from multiple seats: founder, sales leader, and enterprise IC — so I know what breaks in real-world GTM and how to fix it.</p>
+          <p data-i18n="s05.bio.4">I don't believe in hacks or guarantees. I believe revenue compounds when you build a clear motion, execute it weekly, and adjust based on reality.</p>
         </div>
 
         <p class="why-close" data-i18n-html="s05.close">
@@ -3598,21 +3597,21 @@
         <h2><span class="punct">/</span> Receipts.</h2>
       </div>
       <div class="receipts-meta" data-i18n-html="s06.meta">
-        Anonymized<br>
-        At client request
+        Company names withheld<br>
+        at client request
       </div>
     </div>
 
     <div class="receipts-grid">
       <!-- Receipt 01 — chart card -->
-      <div class="receipt-card receipt-card--chart fade-in">
+      <div class="receipt-card fade-in">
         <div class="receipt-card-head">
           <span class="case-flag" data-i18n-html="r1.flag">
-            <span aria-hidden="true">🇺🇸</span> B2B SaaS · U.S.
+            <span aria-hidden="true">🇲🇽</span> Supply Chain &amp; Logistics SaaS · Mexico
           </span>
           <h3 class="receipt-card-title" data-i18n-html="r1.title">GTM buildout from <em>zero.</em></h3>
           <p class="receipt-card-blurb" data-i18n="r1.blurb">
-            Founder-led, no playbook, no documented ICP, no qualification framework. Six weeks in, the system was running — and the pipeline was producing.
+            Technical and ops founders — no revenue expertise, no motion, no strategy. I came in; six weeks later the GTM engine was working and producing.
           </p>
         </div>
         <div class="receipt-card-stats">
@@ -3622,20 +3621,16 @@
           </div>
           <div class="case-stat">
             <div class="v">$1M</div>
-            <div class="l" data-i18n="r1.s2">Target · By June</div>
+            <div class="l" data-i18n="r1.s2">ARR · within 6 months</div>
           </div>
           <div class="case-stat">
             <div class="v" data-i18n="r1.s3v">6 wks</div>
             <div class="l" data-i18n="r1.s3l">Engagement</div>
           </div>
           <div class="case-stat">
-            <div class="v accent">∞</div>
-            <div class="l" data-i18n="r1.s4">Async access</div>
+            <div class="v accent">Frac CRO</div>
+            <div class="l" data-i18n="r1.s4">Stayed on after the build</div>
           </div>
-        </div>
-        <div class="receipt-card-chart">
-          <div class="chart-mini-label" data-i18n="r1.chart.l">ARR Trajectory · From engagement start</div>
-          <div id="growthChart"></div>
         </div>
       </div>
 
@@ -3645,23 +3640,23 @@
           <span class="case-flag" data-i18n-html="r2.flag">
             <span aria-hidden="true">🇺🇸</span> Mobile Measurement · LATAM Entry
           </span>
-          <h3 class="receipt-card-title" data-i18n-html="r2.title">Zero LATAM presence to <em>$1.1M ARR.</em></h3>
+          <h3 class="receipt-card-title" data-i18n-html="r2.title">Zero LATAM presence to <em>$1.2M ARR.</em></h3>
           <p class="receipt-card-blurb" data-i18n="r2.blurb">
-            U.S.-based mobile measurement platform, Series B. No contacts, no playbook, no regional pricing. Built the GTM motion from scratch and handed back a running operation.
+            U.S.-based mobile measurement platform, Series B expanding into LATAM. No localized playbook, pricing, or contacts — zero traction. I built the local GTM motion from scratch and handed back a revenue operation producing and ready to scale.
           </p>
         </div>
         <div class="receipt-card-stats">
           <div class="case-stat">
-            <div class="v accent">$1.1M</div>
-            <div class="l" data-i18n="r2.s1">ARR · in engagement</div>
+            <div class="v accent">$1.2M</div>
+            <div class="l" data-i18n="r2.s1">ARR · 1-year contract</div>
           </div>
           <div class="case-stat">
-            <div class="v">9</div>
-            <div class="l" data-i18n="r2.s2">Customers closed · LATAM</div>
+            <div class="v">9+</div>
+            <div class="l" data-i18n="r2.s2">Customers acquired · LATAM</div>
           </div>
           <div class="case-stat">
             <div class="v">0 → 1</div>
-            <div class="l" data-i18n="r2.s3">Region built from scratch</div>
+            <div class="l" data-i18n="r2.s3">Local LATAM business built</div>
           </div>
           <div class="case-stat">
             <div class="v accent">Series B</div>
@@ -3671,10 +3666,10 @@
         <div class="receipt-card-quote">
           <div class="receipt-quote-eyebrow"><span class="pip"></span> <span data-i18n="r2.test.eb">Testimonial · Receipt 02</span></div>
           <blockquote data-i18n-html="r2.quote">
-            We had zero LATAM presence — no contacts, no playbook, no regional pricing. Bernardo came in, built the GTM motion from scratch, and handed us a running operation with 9 closed customers across the region. We hit $1.1M ARR before the engagement was over. <em>We didn't have to figure out LATAM. We just had to execute what he built.</em>
+            We had zero LATAM presence. Bernardo built the local GTM motion from scratch and handed us a running operation — 9 customers and $1.2M ARR in year-one contracts. <em>We didn't have to figure out LATAM. We just had to execute what he built.</em>
           </blockquote>
           <div class="receipt-quote-attr" data-i18n-html="r2.attr">
-            <strong>VP of Sales</strong>
+            <strong>CRO</strong>
             U.S.-based mobile measurement platform · Series B
           </div>
         </div>
@@ -3686,14 +3681,14 @@
           <span class="case-flag" data-i18n-html="r3.flag">
             <span aria-hidden="true">🇮🇱</span> AdTech · Spanish-Speaking LATAM
           </span>
-          <h3 class="receipt-card-title" data-i18n-html="r3.title">Built a <em>$6M+ ARR</em> region that didn't exist.</h3>
+          <h3 class="receipt-card-title" data-i18n-html="r3.title">Built a <em>$6M ARR</em> region that didn't exist.</h3>
           <p class="receipt-card-blurb" data-i18n="r3.blurb">
-            Israel-based AdTech, global and publicly listed. Owned Spanish-speaking LATAM end-to-end — pipeline, team structure, commercial relationships — from the ground up over three years.
+            Israel-based AdTech, global and privately held. I owned Spanish-speaking LATAM end-to-end — pipeline, team, commercial relationships — built from the ground up over three years.
           </p>
         </div>
         <div class="receipt-card-stats">
           <div class="case-stat">
-            <div class="v accent">$6M+</div>
+            <div class="v accent">$6M</div>
             <div class="l" data-i18n="r3.s1">ARR · region built</div>
           </div>
           <div class="case-stat">
@@ -3705,18 +3700,18 @@
             <div class="l" data-i18n="r3.s3">Region owned end-to-end</div>
           </div>
           <div class="case-stat">
-            <div class="v accent" data-i18n="r3.s4v">Public</div>
-            <div class="l" data-i18n="r3.s4">Globally listed company</div>
+            <div class="v accent" data-i18n="r3.s4v">Private</div>
+            <div class="l" data-i18n="r3.s4">Global company · privately held</div>
           </div>
         </div>
         <div class="receipt-card-quote">
           <div class="receipt-quote-eyebrow"><span class="pip"></span> <span data-i18n="r3.test.eb">Testimonial · Receipt 03</span></div>
           <blockquote data-i18n-html="r3.quote">
-            We needed someone who could own Spanish-speaking LATAM — not advise on it. Bernardo built the pipeline, the team structure, and the commercial relationships from the ground up. Three years in, the region was producing $6M+ ARR. <em>That business didn't exist before he built it.</em>
+            We needed someone who could own Spanish-speaking LATAM — not advise on it. Bernardo built the pipeline, the team structure, and the commercial relationships from the ground up. Three years in, the region was producing $6M ARR. <em>That business didn't exist before he built it.</em>
           </blockquote>
           <div class="receipt-quote-attr" data-i18n-html="r3.attr">
-            <strong>CRO</strong>
-            Israel-based AdTech · global, publicly listed
+            <strong>J. Schimmels</strong>
+            VP LATAM &amp; APAC · Israel-based AdTech, global
           </div>
         </div>
       </div>
@@ -3725,11 +3720,11 @@
       <div class="receipt-card receipt-card--quote fade-in">
         <div class="receipt-card-head">
           <span class="case-flag" data-i18n-html="r4.flag">
-            <span aria-hidden="true">🇲🇽</span> Logistics SaaS · Repeat Engagement
+            <span aria-hidden="true">🌎</span> LATAM Super App · B2B Ads BU
           </span>
           <h3 class="receipt-card-title" data-i18n-html="r4.title">$3.5M TCV in <em>three months.</em></h3>
           <p class="receipt-card-blurb" data-i18n-html="r4.blurb">
-            Mexico-based Logistics &amp; Supply Chain SaaS. First engagement: full GTM buildout — ICP, pricing, pipeline stages, platform setup, hiring profile. Came back for round two and the system did the work.
+            LATAM-based super app scaling its B2B Ads business unit. First engagement: GTM buildout — people, process, platform. They came back for round two: scale.
           </p>
         </div>
         <div class="receipt-card-stats">
@@ -3743,7 +3738,7 @@
           </div>
           <div class="case-stat">
             <div class="v" data-i18n="r4.s3v">Full GTM</div>
-            <div class="l" data-i18n="r4.s3">ICP · pricing · stages · hiring</div>
+            <div class="l" data-i18n="r4.s3">People · process · platform</div>
           </div>
           <div class="case-stat">
             <div class="v accent" data-i18n="r4.s4v">3 mo.</div>
@@ -3753,11 +3748,11 @@
         <div class="receipt-card-quote">
           <div class="receipt-quote-eyebrow"><span class="pip"></span> <span data-i18n="r4.test.eb">Testimonial · Receipt 04</span></div>
           <blockquote data-i18n-html="r4.quote">
-            The first engagement covered everything — ICP, pricing, pipeline stages, platform setup, hiring profile, the whole system. When we came back for a second round, we closed $3.5M TCV within three months. That's not a coincidence. <em>The system he built the first time is what made the second time work.</em>
+            The first engagement built the system — people, process, platform. When we came back for round two, we closed $3.5M TCV within three months. That's not a coincidence. <em>The system he built the first time is what made the second time work.</em>
           </blockquote>
           <div class="receipt-quote-attr" data-i18n-html="r4.attr">
             <strong>CEO</strong>
-            Mexico-based Logistics &amp; Supply Chain SaaS
+            LATAM super app · B2B Ads BU
           </div>
         </div>
       </div>
@@ -4103,112 +4098,6 @@
     });
   }
 
-  // ============= ECHARTS GROWTH CHART =============
-  function initChart() {
-    const el = document.getElementById('growthChart');
-    if (!el || !window.echarts) return;
-    const chart = echarts.init(el);
-
-    const data = [
-      ['Wk 0', 0],
-      ['Wk 1', 8],
-      ['Wk 2', 22],
-      ['Wk 3', 48],
-      ['Wk 4', 88],
-      ['Wk 5', 145],
-      ['Wk 6', 215],
-      ['Wk 7', 285],
-      ['Wk 8 / 60d', 350]
-    ];
-
-    chart.setOption({
-      grid: { left: 50, right: 30, top: 30, bottom: 30 },
-      tooltip: {
-        trigger: 'axis',
-        backgroundColor: '#131313',
-        borderColor: '#1B8C82',
-        textStyle: { color: '#F2EDE3', fontFamily: 'JetBrains Mono', fontSize: 11 },
-        formatter: (params) => `${params[0].name}<br/><span style="color:#C9F858">$${params[0].value}K ARR</span>`
-      },
-      xAxis: {
-        type: 'category',
-        data: data.map(d => d[0]),
-        axisLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } },
-        axisTick: { show: false },
-        axisLabel: {
-          color: '#B5AFA4',
-          fontFamily: 'JetBrains Mono',
-          fontSize: 10,
-          formatter: (v) => v.toUpperCase()
-        }
-      },
-      yAxis: {
-        type: 'value',
-        max: 400,
-        axisLine: { show: false },
-        axisTick: { show: false },
-        splitLine: { lineStyle: { color: 'rgba(255,255,255,0.05)', type: 'dashed' } },
-        axisLabel: {
-          color: '#B5AFA4',
-          fontFamily: 'JetBrains Mono',
-          fontSize: 10,
-          formatter: '${value}K'
-        }
-      },
-      series: [{
-        type: 'line',
-        smooth: true,
-        symbol: 'circle',
-        symbolSize: 7,
-        data: data.map(d => d[1]),
-        lineStyle: { color: '#C9F858', width: 2.5 },
-        itemStyle: { color: '#C9F858', borderColor: '#131313', borderWidth: 2 },
-        areaStyle: {
-          color: {
-            type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
-            colorStops: [
-              { offset: 0, color: 'rgba(201, 248, 88, 0.45)' },
-              { offset: 1, color: 'rgba(201, 248, 88, 0)' }
-            ]
-          }
-        },
-        markLine: {
-          symbol: 'none',
-          lineStyle: { color: '#1B8C82', type: 'dashed', opacity: 0.6 },
-          label: {
-            color: '#1B8C82',
-            fontFamily: 'JetBrains Mono',
-            fontSize: 10,
-            formatter: '$1M target',
-            position: 'insideEndTop'
-          },
-          data: [{ yAxis: 1000 }]
-        },
-        animationDuration: 1800,
-        animationEasing: 'cubicOut'
-      }]
-    });
-
-    // Animate chart on scroll-in
-    let drawn = false;
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting && !drawn) {
-          drawn = true;
-          chart.setOption({
-            series: [{
-              animationDuration: 2000,
-              animationEasing: 'cubicOut'
-            }]
-          });
-        }
-      });
-    }, { threshold: 0.3 });
-    obs.observe(el);
-
-    window.addEventListener('resize', () => chart.resize());
-  }
-  initChart();
 
   // ============= BFS TABS =============
   (function initBfs() {
@@ -4567,62 +4456,60 @@ window.__updateNextOpening();
       's05.v2.det': 'Salesforce U.S.<br>$30M book.',
       's05.v3.num': '03 / LEADER',
       's05.v3.seat': 'Scaled a region. <em>Built the team.</em>',
-      's05.v3.det': '$10M+ run rate<br>in two years.',
+      's05.v3.det': 'Region built to<br>$6M ARR.',
       's05.stat1.l': 'Enterprise book at Salesforce, U.S.',
-      's05.stat2.l': 'ARR for clients in LATAM expansion.',
-      's05.stat3.l': 'Scaled a new region past this in two years',
-      's05.bio.1': 'Bernardo has more than 12 years building, running, and fixing go-to-market motions across B2B SaaS and tech-enabled services in the U.S. and Latin America.',
-      's05.bio.2': 'He focuses on one thing: making things happen to generate revenue — not slides, not theory.',
-      's05.bio.3': 'He\'s worked from multiple seats: founder, sales leader, and enterprise IC — so he knows what breaks in real-world GTM and how to fix it.',
-      's05.bio.4': 'Bernardo doesn\'t believe in hacks or guarantees. He believes revenue compounds when you build a clear motion, execute it weekly, and adjust based on reality.',
+      's05.stat2.l': 'ARR · region built end-to-end for one client.',
+      's05.stat3.l': 'ARR across a few clients · Mexico market',
+      's05.bio.1': 'I have more than 12 years building, running, and fixing go-to-market motions across B2B SaaS and tech-enabled services in the U.S. and Latin America.',
+      's05.bio.2': 'I focus on one thing: making things happen to generate revenue — not slides, not theory.',
+      's05.bio.3': 'I\'ve worked from multiple seats: founder, sales leader, and enterprise IC — so I know what breaks in real-world GTM and how to fix it.',
+      's05.bio.4': 'I don\'t believe in hacks or guarantees. I believe revenue compounds when you build a clear motion, execute it weekly, and adjust based on reality.',
       's05.close': 'When you work with GalapagoGTM, <em>you get me.</em> That\'s the deal.',
       // SECTION 06
       's06.eyebrow': 'Section 06 / Proof, not promises',
-      's06.meta': 'Anonymized<br>At client request',
-      'r1.flag': '<span aria-hidden="true">🇺🇸</span> B2B SaaS · U.S.',
+      's06.meta': 'Company names withheld<br>at client request',
+      'r1.flag': '<span aria-hidden="true">🇲🇽</span> Supply Chain &amp; Logistics SaaS · Mexico',
       'r1.title': 'GTM buildout from <em>zero.</em>',
-      'r1.blurb': 'Founder-led, no playbook, no documented ICP, no qualification framework. Six weeks in, the system was running — and the pipeline was producing.',
+      'r1.blurb': 'Technical and ops founders — no revenue expertise, no motion, no strategy. I came in; six weeks later the GTM engine was working and producing.',
       'r1.s1': 'ARR · 60 days',
-      'r1.s2': 'Target · By June',
+      'r1.s2': 'ARR · within 6 months',
       'r1.s3v': '6 wks',
       'r1.s3l': 'Engagement',
-      'r1.s4': 'Async access',
-      'r1.chart.l': 'ARR Trajectory · From engagement start',
-      'r1.chart.h': '$0 → $350K in 60 days · $1M target by June',
+      'r1.s4': 'Stayed on after the build',
       'r2.flag': '<span aria-hidden="true">🇺🇸</span> Mobile Measurement · LATAM Entry',
-      'r2.title': 'Zero LATAM presence to <em>$1.1M ARR.</em>',
-      'r2.blurb': 'U.S.-based mobile measurement platform, Series B. No contacts, no playbook, no regional pricing. Built the GTM motion from scratch and handed back a running operation.',
-      'r2.s1': 'ARR · in engagement',
-      'r2.s2': 'Customers closed · LATAM',
-      'r2.s3': 'Region built from scratch',
+      'r2.title': 'Zero LATAM presence to <em>$1.2M ARR.</em>',
+      'r2.blurb': 'U.S.-based mobile measurement platform, Series B expanding into LATAM. No localized playbook, pricing, or contacts — zero traction. I built the local GTM motion from scratch and handed back a revenue operation producing and ready to scale.',
+      'r2.s1': 'ARR · 1-year contract',
+      'r2.s2': 'Customers acquired · LATAM',
+      'r2.s3': 'Local LATAM business built',
       'r2.s4': 'Stage at engagement',
       'r2.test.eb': 'Testimonial · Receipt 02',
-      'r2.quote': 'We had zero LATAM presence — no contacts, no playbook, no regional pricing. Bernardo came in, built the GTM motion from scratch, and handed us a running operation with 9 closed customers across the region. We hit $1.1M ARR before the engagement was over. <em>We didn\'t have to figure out LATAM. We just had to execute what he built.</em>',
-      'r2.attr': '<strong>VP of Sales</strong>U.S.-based mobile measurement platform · Series B',
+      'r2.quote': 'We had zero LATAM presence. Bernardo built the local GTM motion from scratch and handed us a running operation — 9 customers and $1.2M ARR in year-one contracts. <em>We didn\'t have to figure out LATAM. We just had to execute what he built.</em>',
+      'r2.attr': '<strong>CRO</strong>U.S.-based mobile measurement platform · Series B',
       'r3.flag': '<span aria-hidden="true">🇮🇱</span> AdTech · Spanish-Speaking LATAM',
-      'r3.title': 'Built a <em>$6M+ ARR</em> region that didn\'t exist.',
-      'r3.blurb': 'Israel-based AdTech, global and publicly listed. Owned Spanish-speaking LATAM end-to-end — pipeline, team structure, commercial relationships — from the ground up over three years.',
+      'r3.title': 'Built a <em>$6M ARR</em> region that didn\'t exist.',
+      'r3.blurb': 'Israel-based AdTech, global and privately held. I owned Spanish-speaking LATAM end-to-end — pipeline, team, commercial relationships — built from the ground up over three years.',
       'r3.s1': 'ARR · region built',
       'r3.s2v': '3 yrs',
       'r3.s2': 'Engagement length',
       'r3.s3': 'Region owned end-to-end',
-      'r3.s4v': 'Public',
-      'r3.s4': 'Globally listed company',
+      'r3.s4v': 'Private',
+      'r3.s4': 'Global company · privately held',
       'r3.test.eb': 'Testimonial · Receipt 03',
-      'r3.quote': 'We needed someone who could own Spanish-speaking LATAM — not advise on it. Bernardo built the pipeline, the team structure, and the commercial relationships from the ground up. Three years in, the region was producing $6M+ ARR. <em>That business didn\'t exist before he built it.</em>',
-      'r3.attr': '<strong>CRO</strong>Israel-based AdTech · global, publicly listed',
-      'r4.flag': '<span aria-hidden="true">🇲🇽</span> Logistics SaaS · Repeat Engagement',
+      'r3.quote': 'We needed someone who could own Spanish-speaking LATAM — not advise on it. Bernardo built the pipeline, the team structure, and the commercial relationships from the ground up. Three years in, the region was producing $6M ARR. <em>That business didn\'t exist before he built it.</em>',
+      'r3.attr': '<strong>J. Schimmels</strong>VP LATAM &amp; APAC · Israel-based AdTech, global',
+      'r4.flag': '<span aria-hidden="true">🌎</span> LATAM Super App · B2B Ads BU',
       'r4.title': '$3.5M TCV in <em>three months.</em>',
-      'r4.blurb': 'Mexico-based Logistics &amp; Supply Chain SaaS. First engagement: full GTM buildout — ICP, pricing, pipeline stages, platform setup, hiring profile. Came back for round two and the system did the work.',
+      'r4.blurb': 'LATAM-based super app scaling its B2B Ads business unit. First engagement: GTM buildout — people, process, platform. They came back for round two: scale.',
       'r4.s1': 'TCV · 3 months · Round 2',
       'r4.s2': 'Repeat engagement',
       'r4.s3v': 'Full GTM',
-      'r4.s3': 'ICP · pricing · stages · hiring',
+      'r4.s3': 'People · process · platform',
       'r4.s4v': '3 mo.',
       'r4.s4': 'Time to close $3.5M',
       'r4.test.eb': 'Testimonial · Receipt 04',
-      'r4.quote': 'The first engagement covered everything — ICP, pricing, pipeline stages, platform setup, hiring profile, the whole system. When we came back for a second round, we closed $3.5M TCV within three months. That\'s not a coincidence. <em>The system he built the first time is what made the second time work.</em>',
-      'r4.attr': '<strong>CEO</strong>Mexico-based Logistics &amp; Supply Chain SaaS',
+      'r4.quote': 'The first engagement built the system — people, process, platform. When we came back for round two, we closed $3.5M TCV within three months. That\'s not a coincidence. <em>The system he built the first time is what made the second time work.</em>',
+      'r4.attr': '<strong>CEO</strong>LATAM super app · B2B Ads BU',
       // SECTION 07
       's07.eyebrow': 'Section 07 / The Diagnostic',
       's07.h2': 'Not sure where to start? <em>Start here.</em>',
@@ -4780,69 +4667,67 @@ window.__updateNextOpening();
       's05.sub': 'Been There. Done That.',
       's05.overlay': 'BERNARDO V.',
       's05.v1.num': '01 / FOUNDER',
-      's05.v1.seat': 'Construyó GTM desde cero. <em>Sin playbook heredado.</em>',
+      's05.v1.seat': 'Construí GTM desde cero. <em>Sin playbook heredado.</em>',
       's05.v1.det': 'Sin deck.<br>Sistema operativo real.',
       's05.v2.num': '02 / SELLER',
-      's05.v2.seat': 'Cerró deals enterprise. <em>Con cuota.</em>',
+      's05.v2.seat': 'Cerré deals enterprise. <em>Con cuota.</em>',
       's05.v2.det': 'Salesforce EE.UU.<br>book de $30M.',
       's05.v3.num': '03 / LEADER',
-      's05.v3.seat': 'Escaló una región. <em>Construyó el equipo.</em>',
-      's05.v3.det': '$10M+ run rate<br>en dos años.',
+      's05.v3.seat': 'Escalé una región. <em>Construí el equipo.</em>',
+      's05.v3.det': 'Región construida a<br>$6M ARR.',
       's05.stat1.l': 'Book enterprise en Salesforce, EE.UU.',
-      's05.stat2.l': 'ARR para clientes en expansión LATAM.',
-      's05.stat3.l': 'Nueva región escalada por encima de esto en dos años',
-      's05.bio.1': 'Bernardo tiene más de 12 años construyendo, operando y corrigiendo sistemas GTM para B2B SaaS y tech-enabled services entre Estados Unidos y Latinoamérica.',
-      's05.bio.2': 'Se enfoca en una sola cosa: construir sistemas que generen revenue real — no slides, no teoría.',
-      's05.bio.3': 'Ha estado en los tres lados de la mesa: founder, sales leader y enterprise IC — así que sabe qué se rompe en un GTM real y cómo corregirlo.',
-      's05.bio.4': 'Bernardo no cree en hacks ni en garantías. Cree que el revenue se compone cuando construyes un motion claro, lo ejecutas cada semana y ajustas con base en la realidad.',
+      's05.stat2.l': 'ARR · región construida de punta a punta para un cliente.',
+      's05.stat3.l': 'ARR entre varios clientes · mercado de México',
+      's05.bio.1': 'Tengo más de 12 años construyendo, operando y corrigiendo sistemas GTM para B2B SaaS y tech-enabled services entre Estados Unidos y Latinoamérica.',
+      's05.bio.2': 'Me enfoco en una sola cosa: hacer que las cosas pasen para generar revenue — no slides, no teoría.',
+      's05.bio.3': 'He estado en los tres lados de la mesa: founder, sales leader y enterprise IC — así que sé qué se rompe en un GTM real y cómo corregirlo.',
+      's05.bio.4': 'No creo en hacks ni en garantías. Creo que el revenue se compone cuando construyes un motion claro, lo ejecutas cada semana y ajustas con base en la realidad.',
       's05.close': 'Cuando trabajas con GalapagoGTM, <em>trabajas conmigo.</em> Ese es el deal.',
       // SECTION 06
       's06.eyebrow': 'Sección 06 / Pruebas, no promesas',
-      's06.meta': 'Anonimizado<br>por petición del cliente',
-      'r1.flag': '<span aria-hidden="true">🇺🇸</span> B2B SaaS · EE.UU.',
+      's06.meta': 'Empresas anonimizadas<br>a petición del cliente',
+      'r1.flag': '<span aria-hidden="true">🇲🇽</span> Supply Chain &amp; Logistics SaaS · México',
       'r1.title': 'GTM construido desde <em>cero.</em>',
-      'r1.blurb': 'Founder-led, sin playbook, sin ICP documentado y sin framework de calificación. En seis semanas, el sistema ya estaba corriendo — y el pipeline empezaba a producir.',
+      'r1.blurb': 'Founders técnicos y de operaciones — sin expertise en revenue, sin motion, sin estrategia. Entré, y a las seis semanas el motor GTM ya estaba funcionando y produciendo.',
       'r1.s1': 'ARR · 60 días',
-      'r1.s2': 'Meta · A junio',
+      'r1.s2': 'ARR · en 6 meses',
       'r1.s3v': '6 sem',
-      'r1.s3l': 'Sprint',
-      'r1.s4': 'Acceso async',
-      'r1.chart.l': 'Trayectoria ARR · Desde el inicio del sprint',
-      'r1.chart.h': '$0 → $350K en 60 días · meta de $1M a junio',
+      'r1.s3l': 'Engagement',
+      'r1.s4': 'Me quedé después del build',
       'r2.flag': '<span aria-hidden="true">🇺🇸</span> Mobile Measurement · Entrada a LATAM',
-      'r2.title': 'De cero presencia en LATAM a <em>$1.1M ARR.</em>',
-      'r2.blurb': 'Plataforma de mobile measurement con base en EE.UU., Series B. Sin contactos, sin playbook, sin pricing regional. Construimos el motion GTM desde cero y dejamos una operación funcionando.',
-      'r2.s1': 'ARR · durante el sprint',
+      'r2.title': 'De cero presencia en LATAM a <em>$1.2M ARR.</em>',
+      'r2.blurb': 'Plataforma de mobile measurement con base en EE.UU., Series B en expansión a LATAM. Sin playbook local, sin pricing, sin contactos — cero tracción. Construí el motion GTM local desde cero y entregué una operación de revenue produciendo y lista para escalar.',
+      'r2.s1': 'ARR · contrato de 1 año',
       'r2.s2': 'Clientes cerrados · LATAM',
-      'r2.s3': 'Región construida desde cero',
+      'r2.s3': 'Negocio LATAM local construido',
       'r2.s4': 'Etapa al inicio',
       'r2.test.eb': 'Testimonio · Caso 02',
-      'r2.quote': 'Teníamos cero presencia en LATAM — sin contactos, sin playbook, sin pricing regional. Bernardo entró, construyó el motion GTM desde cero y nos dejó una operación funcionando con 9 clientes cerrados en la región. Llegamos a $1.1M ARR antes de que terminara el sprint. <em>No tuvimos que resolver LATAM desde cero. Solo tuvimos que ejecutar lo que él construyó.</em>',
-      'r2.attr': '<strong>VP of Sales</strong>Plataforma de mobile measurement, EE.UU. · Series B',
+      'r2.quote': 'Teníamos cero presencia en LATAM. Bernardo construyó el motion GTM local desde cero y nos dejó una operación funcionando — 9 clientes y $1.2M ARR en contratos de primer año. <em>No tuvimos que resolver LATAM. Solo ejecutar lo que él construyó.</em>',
+      'r2.attr': '<strong>CRO</strong>Plataforma de mobile measurement, EE.UU. · Series B',
       'r3.flag': '<span aria-hidden="true">🇮🇱</span> AdTech · LATAM hispanohablante',
-      'r3.title': 'Construyó una región de <em>$6M+ ARR</em> que no existía.',
-      'r3.blurb': 'AdTech con base en Israel, global y listada públicamente. Lideró LATAM hispanohablante de punta a punta — pipeline, estructura de equipo y relaciones comerciales — desde cero, durante tres años.',
+      'r3.title': 'Construí una región de <em>$6M ARR</em> que no existía.',
+      'r3.blurb': 'AdTech con base en Israel, global y privada. Lideré LATAM hispanohablante de punta a punta — pipeline, equipo y relaciones comerciales — construido desde cero durante tres años.',
       'r3.s1': 'ARR · región construida',
       'r3.s2v': '3 años',
-      'r3.s2': 'Duración del sprint',
+      'r3.s2': 'Duración del engagement',
       'r3.s3': 'Región liderada end-to-end',
-      'r3.s4v': 'Pública',
-      'r3.s4': 'Empresa global listada públicamente',
+      'r3.s4v': 'Privada',
+      'r3.s4': 'Empresa global · privada',
       'r3.test.eb': 'Testimonio · Caso 03',
-      'r3.quote': 'Necesitábamos a alguien que pudiera hacerse cargo de LATAM hispanohablante — no solo asesorarnos. Bernardo construyó el pipeline, la estructura de equipo y las relaciones comerciales desde cero. Tres años después, la región producía $6M+ ARR. <em>Ese negocio no existía antes de que él lo construyera.</em>',
-      'r3.attr': '<strong>CRO</strong>AdTech, Israel · global, listada públicamente',
-      'r4.flag': '<span aria-hidden="true">🇲🇽</span> Logistics SaaS · Sprint repetido',
+      'r3.quote': 'Necesitábamos a alguien que pudiera hacerse cargo de LATAM hispanohablante — no solo asesorarnos. Bernardo construyó el pipeline, la estructura de equipo y las relaciones comerciales desde cero. Tres años después, la región producía $6M ARR. <em>Ese negocio no existía antes de que él lo construyera.</em>',
+      'r3.attr': '<strong>J. Schimmels</strong>VP LATAM &amp; APAC · AdTech, Israel, global',
+      'r4.flag': '<span aria-hidden="true">🌎</span> Super App LATAM · B2B Ads BU',
       'r4.title': '$3.5M TCV en <em>tres meses.</em>',
-      'r4.blurb': 'Logistics &amp; Supply Chain SaaS con base en México. Primer sprint: GTM completo — ICP, pricing, etapas del pipeline, setup de plataforma y perfil de contratación. Volvieron para una segunda ronda y el sistema ya estaba listo para producir.',
+      'r4.blurb': 'Super app con base en LATAM escalando su unidad de Ads B2B. Primer engagement: GTM buildout — gente, proceso, plataforma. Volvieron por una segunda ronda: escalar.',
       'r4.s1': 'TCV · 3 meses · Round 2',
-      'r4.s2': 'Sprint repetido',
+      'r4.s2': 'Engagement repetido',
       'r4.s3v': 'GTM completo',
-      'r4.s3': 'ICP · pricing · stages · contratación',
+      'r4.s3': 'Gente · proceso · plataforma',
       'r4.s4v': '3 meses',
       'r4.s4': 'Tiempo para cerrar $3.5M',
       'r4.test.eb': 'Testimonio · Caso 04',
-      'r4.quote': 'El primer sprint cubrió todo — ICP, pricing, stages del pipeline, setup de plataforma, perfil de contratación, el sistema completo. Cuando volvimos para una segunda ronda, cerramos $3.5M TCV en tres meses. Eso no es coincidencia. <em>El sistema que construyó la primera vez fue lo que hizo que la segunda funcionara.</em>',
-      'r4.attr': '<strong>CEO</strong>Logistics &amp; Supply Chain SaaS, México',
+      'r4.quote': 'El primer engagement construyó el sistema completo — gente, proceso, plataforma. Cuando volvimos por una segunda ronda, cerramos $3.5M TCV en tres meses. Eso no es coincidencia. <em>El sistema que construyó la primera vez fue lo que hizo que la segunda funcionara.</em>',
+      'r4.attr': '<strong>CEO</strong>Super app LATAM · Ads BU',
       // SECTION 07
       's07.eyebrow': 'Sección 07 / El Diagnóstico',
       's07.h2': '¿No sabes por dónde empezar? <em>Empieza aquí.</em>',
