@@ -1364,6 +1364,7 @@
     transform: scaleX(1);
     background: var(--ink);
   }
+  .bfs-progress .pdot.fill { background: rgba(0,0,0,0.2); }
   @keyframes pdotfill {
     from { transform: scaleX(0); }
     to { transform: scaleX(1); }
@@ -4159,8 +4160,7 @@
       contents.forEach((c) => c.classList.toggle('active', c.dataset.content === tab));
       dots.forEach((d, i) => {
         d.classList.remove('fill', 'done');
-        if (i < idx) d.classList.add('done');
-        if (i === idx && !userLocked) d.classList.add('fill');
+        if (i === idx) d.classList.add(userLocked ? 'done' : 'fill');
       });
     }
 
