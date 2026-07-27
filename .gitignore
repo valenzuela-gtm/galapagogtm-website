@@ -1,0 +1,7 @@
+# Local AI-workspace files — NEVER commit these: this repo is PUBLIC
+# (galapago.io is hosted from it) and these files reference internal
+# pricing and strategy context.
+CLAUDE.md
+AGENTS.md
+.claude/
+.DS_Store
