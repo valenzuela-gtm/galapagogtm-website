@@ -5,3 +5,7 @@ CLAUDE.md
 AGENTS.md
 .claude/
 .DS_Store
+
+# Living state files — internal, never public (added 2026-09-16)
+STATUS.md
+DIARY.md
