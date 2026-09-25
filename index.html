@@ -3234,6 +3234,17 @@
 .bfs-card-box p { font-size: 15.5px; line-height: 1.55; color: var(--stone-700); margin: 0; }
 .bfs-boxes-cta { display: flex; justify-content: center; margin-top: 36px; }
 @media (max-width: 900px) { .bfs-boxes { grid-template-columns: 1fr; } }
+/* 2026-09-25 (2): hero fills the first screen with the ticker, room to breathe */
+.hero { min-height: calc(100vh - var(--ticker-h, 54px)) !important; min-height: calc(100svh - var(--ticker-h, 54px)) !important; justify-content: center !important; padding-top: clamp(110px, 13vh, 150px) !important; padding-bottom: clamp(40px, 6vh, 72px) !important; }
+.hero .next-opening { margin-bottom: clamp(18px, 2.6vh, 28px) !important; }
+.hero .hero-eyebrow { margin-bottom: clamp(32px, 5vh, 56px) !important; }
+.hero-static { gap: clamp(14px, 2.4vh, 26px) !important; margin-bottom: clamp(36px, 5.5vh, 60px) !important; }
+.hero-static .hero-line-1, .hero-static .hero-line-2 { font-size: clamp(34px, 5.6vw, 84px) !important; }
+.hero-static .hs-verbs { gap: 0.3em !important; }
+.hero-static .hs-comma { margin: 0 0.04em 0 -0.28em !important; }
+.hero .hero-sub { max-width: 820px !important; hyphens: none !important; }
+.hero-static .hero-line-2 { letter-spacing: -0.03em; }
+.hero .hero-sub { line-height: 1.6 !important; margin-bottom: clamp(30px, 4.5vh, 48px) !important; }
 </style>
 </head>
 <body>
