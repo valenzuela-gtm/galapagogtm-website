@@ -1,8 +1,8 @@
 # galapagogtm-website
 
-Source for [galapago.io](https://galapago.io) — GalapagoGTM by Bernardo Valenzuela.
+Source for [galapago.io](https://galapago.io): Bernardo Valenzuela, GTM strategy and execution across the US and LATAM.
 
-Single static page (`index.html`) deployed via GitHub Pages. EN/ES i18n is built in and auto-detects from the browser; the choice is remembered in `localStorage`.
+Static site deployed via GitHub Pages: `index.html` (home), `vc-pe.html` (for VC and PE teams), `privacy/` and `terms/`. Styles in `site.css` plus `palette-mono.css`; scripts in `site.js`, `dots.js` (the moving dots) and `consent.js` (cookie consent and the OpenAI Ads pixel, which loads only on galapago.io).
 
 ## Deploy
 
@@ -15,4 +15,4 @@ Single static page (`index.html`) deployed via GitHub Pages. EN/ES i18n is built
 
 ## Edit
 
-Everything lives in `index.html` — CSS, JS, and copy. EN/ES strings are in the `i18n` object near the bottom of the file.
+The pages are built from the private `bvgtm-website` repo; edit there and copy the result here. Every push to `main` is live in about a minute.
